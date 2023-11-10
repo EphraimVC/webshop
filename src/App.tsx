@@ -1,22 +1,19 @@
-import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./Pages/Dashboard";
 import CartPage from "./Pages/CartPage";
-// import Nav from "../src/Components/Navbar.tsx";
-// import ItemBadge from "./Components/itemBadge.tsx";
-// import StartPage from "./Pages/StartPage.tsx";
-// import Item from "../src/Pages/Item";
-
-import "./App.css";
-
+import StartPage from "./Pages/StartPage";
+import CustomerInfo from "./Pages/CustomerInfo";
+import Item from "./Pages/Item";
 function App() {
     return (
-        <div>
-            {/* <Item /> */}
-            <CartPage />
-            {/* <Button /> */}
-            {/* <Nav /> */}
-            {/* <StartPage /> */}
-            {/* <ItemBadge /> */}
-        </div>
+        <Routes>
+            <Route path="*" element={<Dashboard />}>
+                <Route index element={<StartPage />} />
+                <Route path="cart" element={<CartPage />} />
+                <Route path="customer_info" element={<CustomerInfo />} />
+                <Route path="Item:id" element={<Item />} />
+            </Route>
+        </Routes>
     );
 }
 

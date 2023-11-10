@@ -14,3 +14,4 @@ function CartPage() {
 export default CartPage;
 
 //map function till inputfield
+// byta inputfield till infogad text

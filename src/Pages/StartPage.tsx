@@ -1,6 +1,7 @@
-import ItemBadge, { ApiData } from "../Components/ItemBadge";
+import ItemBadge from "../Components/ItemBadge";
 import { fetchData } from "../Api/itemsApi";
 import React, { useEffect, useState } from "react";
+import { ApiData } from "../Helpers/typeIndex";
 
 function StartPage() {
     const [data, setData] = useState([]);
@@ -34,7 +35,7 @@ function StartPage() {
                     </div>
                 ))
             ) : (
-                <p>Loading data </p>
+                <p>Loading Candy</p>
             )}
         </div>
     );

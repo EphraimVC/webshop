@@ -4,7 +4,7 @@ import Btn from "../Components/Button";
 function Item(props) {
     return (
         <div>
-            <ItemHero image={} name={} price={} />
+            <ItemHero />
             <div className="flex justify-center">
                 <Btn BtnText={"Lägg till"} />
             </div>
@@ -13,3 +13,5 @@ function Item(props) {
 }
 
 export default Item;
+
+// id={} image={} name={} price={}

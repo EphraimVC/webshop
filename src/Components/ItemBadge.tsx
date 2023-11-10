@@ -4,8 +4,11 @@ function ItemBadge(props: ApiData) {
     const thumbnails = `https://www.bortakvall.se/${props.image}`;
 
     return (
-        <div className="mt-20" key={props.id}>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="mt-20">
+            <div
+                key={props.id}
+                className="card card-compact w-96 bg-base-100 shadow-xl"
+            >
                 <figure>
                     <img className="rounded-lg" src={thumbnails} alt="Shoes" />
                 </figure>

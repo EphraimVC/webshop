@@ -2,11 +2,15 @@ function Navbar() {
     return (
         <div>
             <div className="navbar bg-base-100 shadow-xl">
-                <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl">
-                        The TS Webshop
+                <div className="flex-1 justify-center">
+                    <a
+                        href="*"
+                        className="btn btn-ghost normal-case text-xl text-center"
+                    >
+                        The TS Candy Webshop
                     </a>
                 </div>
+
                 <div className="flex-none">
                     <div className="dropdown dropdown-end">
                         <label

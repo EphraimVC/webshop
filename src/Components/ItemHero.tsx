@@ -1,7 +1,10 @@
 function ItemHero(props) {
     return (
         <div>
-            <div className="card card-compact w-[43rem] bg-base-100 shadow-xl">
+            <div
+                id={props.id}
+                className="card card-compact w-[43rem] bg-base-100 shadow-xl"
+            >
                 <figure>
                     <img src={props.image} alt="Shoes" />
                 </figure>
